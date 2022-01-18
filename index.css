@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+html{
+    background-image: url('images/pattern-background-desktop.svg'),
+    linear-gradient(hsl(225, 100%, 94%), hsl(225, 100%, 94%));
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0; padding: 0; height: 100%; width: 100%;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 0;
+}
+
+a, button{
+    font-weight: 700;
+}
+
+h2{
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+    left: -8px;
+}
+a{
+    display: block;
+    padding: 5%;
+}
+a:hover{
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+}
+p, a{
+    color: hsl(224, 23%, 55%);
+}
+
+.row{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin: 35%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.hero-image{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.content{
+    padding: 10%;
+    margin: auto;
+}
+.small-container{
+    width: 90%;
+    padding: 5%;
+    background-color: hsl(225, 100%, 94%, 0.3);
+    border-radius: 15px;
+}
+.small-container a{
+    color: hsl(245, 75%, 52%);
+    width: 15%;
+}
+.small-container a:hover{
+    color: hsl(245, 75%, 52%, 0.7);
+    text-decoration: none;
+}
+
+.smaller-container{
+    width: 70%;
+
+    justify-content: flex-start;
+
+}
+.smaller-container p{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    left: -8px;
+}
+.smaller-container .column{
+    margin: 8%;
+
+}
+
+button{
+    color: #FFF;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    padding: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border: none;
+    box-shadow: 0 6px 20px 0 hsl(245, 75%, 52%, 0.3);
+}
+button:hover{
+    background-color: hsl(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 0;
+    margin-bottom: 2%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 200px) and (max-width: 1024px){
+    h2{
+        font-size: 14px;
+    }
+    .container{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
